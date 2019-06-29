@@ -1,0 +1,15 @@
+[Unit]
+Description=uWSGI instance to serve RF app
+After=network-online.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/fancontrol/flask
+ExecStart=/usr/local/bin/uwsgi --ini rfapp.ini
+Restart=always
+StandardInput=null
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
