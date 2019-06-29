@@ -1,0 +1,17 @@
+[Unit]
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi
+ExecStart=/bin/bash -lc 'ssh -NR 8000:localhost:8000 pi@example.com'
+Restart=always
+StandardInput=null
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=%n
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
