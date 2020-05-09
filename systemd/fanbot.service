@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram Bot to directly control fans
+After=network-online.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/fancontrol/chatbot
+ExecStart=/usr/bin/python3 fanbot.py
+Restart=always
+StandardInput=null
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
