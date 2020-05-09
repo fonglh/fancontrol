@@ -31,6 +31,7 @@ sudo pip3 install Flask
 sudo pip3 install Flask-API
 sudo pip3 install python-dotenv
 sudo pip3 install uwsgi
+sudo pip3 install python-telegram-bot
 ```
 
 ## Installed on Public facing web server
