@@ -21,7 +21,12 @@ https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications
 
 #### Google Assistant to Webhook
 
-Use [IFTTT](https://ifttt.com).
+~~Use [IFTTT](https://ifttt.com).~~
+
+IFTTT now requires payment.
+Google Assistant also started interpreting the command as smart fans which were not configured, overriding the configured key phrases.
+
+The integration does not work anymore, just use the Telegram bot.
 
 ## Installed on Pi
 
