@@ -28,6 +28,10 @@ Google Assistant also started interpreting the command as smart fans which were 
 
 The integration does not work anymore, just use the Telegram bot.
 
+## Network Architecture
+
+To make the Flask application accessible over the Internet when the Raspberry Pi is on a home network, configuring port forwarding on the home router is one possible solution.
+
 ## Installed on Pi
 
 ```
