@@ -34,6 +34,8 @@ To make the Flask application accessible over the Internet when the Raspberry Pi
 
 However, this is not ideal as the home ISP might not assign a fixed IP address. This will then need to be addressed with additional tools like Dynamic DNS to keep a domain name pointed to the correct IP address.
 
+Instead, it is possible to obtain a free virtual machine on Google Cloud Platform's (free tier)[https://cloud.google.com/free/docs/free-cloud-features], which provides a fixed IP for the domain name.
+
 ## Installed on Pi
 
 ```
