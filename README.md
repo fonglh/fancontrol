@@ -36,6 +36,8 @@ However, this is not ideal as the home ISP might not assign a fixed IP address. 
 
 Instead, it is possible to obtain a free virtual machine on Google Cloud Platform's (free tier)[https://cloud.google.com/free/docs/free-cloud-features], which provides a fixed IP for the domain name.
 
+Follow the steps below to install `nginx`, and use `certbot` for automatically renewing a free SSL certificate from (Let's Encrypt)[https://letsencrypt.org/].
+
 ## Installed on Pi
 
 ```
