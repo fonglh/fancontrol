@@ -32,6 +32,8 @@ The integration does not work anymore, just use the Telegram bot.
 
 To make the Flask application accessible over the Internet when the Raspberry Pi is on a home network, configuring port forwarding on the home router is one possible solution.
 
+However, this is not ideal as the home ISP might not assign a fixed IP address. This will then need to be addressed with additional tools like Dynamic DNS to keep a domain name pointed to the correct IP address.
+
 ## Installed on Pi
 
 ```
