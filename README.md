@@ -40,13 +40,14 @@ Follow the steps below to install `nginx`, and use `certbot` for automatically r
 
 ## Installed on Pi
 
+Create and activate Python virtualenv in a hidden folder inside `/home/pi`.
+
 ```
-sudo apt install python3-pip
-sudo pip3 install Flask
-sudo pip3 install Flask-API
-sudo pip3 install python-dotenv
-sudo pip3 install uwsgi
-sudo pip3 install python-telegram-bot
+python3 -m venv ./.pyvenv
+source ~/.pyvenv/bin/activate
+pip install python-dotenv
+pip install python-telegram-bot --upgrade
+pip install RPi.GPIO
 ```
 
 ## Installed on Public facing web server
